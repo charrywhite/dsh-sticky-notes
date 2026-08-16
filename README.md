@@ -20,6 +20,10 @@
   <img src="headline.png" alt="DeepSeek 便签 — 在 DeepSeek Harness 里贴便签" width="100%">
 </p>
 
+<p align="center">
+  <img src="interface3.PNG" alt="DeepSeek 便签 — 界面截图" width="100%">
+</p>
+
 <br />
 
 ## 亮点

@@ -20,6 +20,10 @@
   <img src="headline.png" alt="Sticky Notes for DSH — notes pinned in DeepSeek Harness" width="100%">
 </p>
 
+<p align="center">
+  <img src="interface3.PNG" alt="Sticky Notes for DSH — interface screenshot" width="100%">
+</p>
+
 <br />
 
 ## Highlights
