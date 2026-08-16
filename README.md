@@ -4,6 +4,10 @@
 
 <h1 align="center">📝 dsh-sticky-notes</h1>
 
+<p align="center">
+  <strong>中文</strong> | <a href="README.en.md">English</a>
+</p>
+
 <p align="center">DeepSeek Harness 便签插件:一张张可拖动的便签纸,贴在对话框右侧空白处。</p>
 
 - **打字记录**:每张便签是一个待办列表,回车/按钮添加
