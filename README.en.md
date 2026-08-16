@@ -2,7 +2,7 @@
   <img src="headline.png" alt="dsh-sticky-notes preview" width="100%">
 </p>
 
-<h1 align="center">📝 dsh-sticky-notes</h1>
+<h1 align="center">📝 Sticky Notes for DSH</h1>
 
 <p align="center">
   <a href="README.md">中文</a> | <strong>English</strong>

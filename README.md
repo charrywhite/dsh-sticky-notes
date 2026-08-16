@@ -2,7 +2,7 @@
   <img src="headline.png" alt="dsh-sticky-notes 便签预览" width="100%">
 </p>
 
-<h1 align="center">📝 dsh-sticky-notes</h1>
+<h1 align="center">📝 DeepSeek 便签</h1>
 
 <p align="center">
   <strong>中文</strong> | <a href="README.en.md">English</a>
