@@ -8,7 +8,7 @@
   <a href="README.md">中文</a> | <strong>English</strong>
 </p>
 
-<p align="center">Sticky notes plugin for DeepSeek Harness: draggable note cards pinned to the blank area on the right side of the chat.</p>
+<p align="center">Sticky notes plugin for DeepSeek Harness: draggable note cards pinned to the blank area.</p>
 
 - **Type to record**: each note is a todo list; press Enter or click Add
 - **Check off**: tick the checkbox to strike through and dim the item; click again to undo
