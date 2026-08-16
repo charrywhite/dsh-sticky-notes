@@ -1,24 +1,111 @@
 <p align="center">
-  <img src="headline.png" alt="dsh-sticky-notes 便签预览" width="100%">
+  <img src="headline.png" alt="DeepSeek 便签 — 在 DeepSeek Harness 里贴便签" width="100%">
 </p>
 
 <h1 align="center">📝 DeepSeek 便签</h1>
 
 <p align="center">
-  <strong>中文</strong> | <a href="README.en.md">English</a>
+  <strong>中文</strong> · <a href="README.en.md">English</a>
 </p>
 
-<p align="center">DeepSeek Harness 便签插件:一张张可拖动的便签纸,贴在空白处。</p>
+<p align="center">
+  <strong>让 DeepSeek Harness 拥有真正的便签纸</strong><br />
+  <sub>可拖动 · 待办勾选 · 9 款皮肤 · 图片便签 · AI 读写</sub>
+</p>
 
-- **打字记录**:每张便签是一个待办列表,回车/按钮添加
-- **勾选完成**:点复选框,文字出现删除线并变淡
-- **多张便签**:右上角「＋ 新建便签」随意添加,每张完全独立
-- **可拖动**:便签、收起的小标签、「新建便签」按钮都能拖到任意位置并记住
-- **9 套皮肤**:经典黄、薄荷绿、樱花粉、天空蓝、暮光紫、暖橙日落、石墨暗夜、霓虹荧光、极简白纸
-- **图片便签**:上传/拖入图片,便签纸里展示图片
-- **自定义标题**:✏️ 铅笔图标重命名,清空后标题可留白
-- **AI 协同**:DeepSeek 模型可以直接**读**你的便签、帮你**写**便签(见下文)
-- **数据可靠**:刷新、重开页面都不丢
+<p align="center">
+  <a href="https://github.com/charrywhite/dsh-sticky-notes/stargazers"><img src="https://img.shields.io/github/stars/charrywhite/dsh-sticky-notes?style=flat&color=d97706" alt="Stars" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/charrywhite/dsh-sticky-notes?style=flat&color=059669" alt="License" /></a>
+  <a href="https://github.com/charrywhite/dsh-sticky-notes/releases"><img src="https://img.shields.io/github/package-json/v/charrywhite/dsh-sticky-notes?style=flat&color=2563eb" alt="Version" /></a>
+  <a href="https://github.com/charrywhite/dsh-sticky-notes"><img src="https://img.shields.io/badge/DeepSeek%20Harness-plugin-7c3aed?style=flat" alt="DeepSeek Harness Plugin" /></a>
+</p>
+
+<br />
+
+## 亮点
+
+<table>
+<tr>
+<td width="50%">
+
+### 📝 打字记录
+
+每张便签就是一个待办列表,回车或点「添加」即可记下一条。
+
+</td>
+<td width="50%">
+
+### ☑️ 勾选完成
+
+点复选框,文字出现删除线并变淡;再点一下取消。
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 📌 多张便签
+
+右上角「＋ 新建便签」随意添加,每张完全独立。
+
+</td>
+<td width="50%">
+
+### 🖐 随意拖动
+
+便签、收起的小标签、「新建便签」按钮都能拖到任意位置并记住。
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎨 9 套皮肤
+
+经典黄、薄荷绿、樱花粉、天空蓝、暮光紫、暖橙日落、石墨暗夜、霓虹荧光、极简白纸,每张便签独立设置。
+
+</td>
+<td width="50%">
+
+### 🖼 图片便签
+
+上传或拖入图片,便签纸里直接展示,点击可更换。
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ✏️ 自定义标题
+
+铅笔图标重命名,清空后标题可留白。
+
+</td>
+<td width="50%">
+
+### 🤖 AI 协同
+
+DeepSeek 模型可以直接**读**你的便签、帮你**写**便签(见 [第 3 节](#3-ai-模型读写便签))。
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+### 🛡 数据可靠
+
+每次改动即时保存,刷新、重开页面都不丢。
+
+</td>
+</tr>
+</table>
+
+## 皮肤一览
+
+<p align="center">
+  <img src="skins.png" alt="9 款皮肤预览" width="100%">
+</p>
+<p align="center"><sub>经典黄 · 薄荷绿 · 樱花粉 · 天空蓝 · 暮光紫 · 暖橙日落 · 石墨暗夜 · 霓虹荧光 · 极简白纸</sub></p>
 
 ---
 

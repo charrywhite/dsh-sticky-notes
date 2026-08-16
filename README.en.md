@@ -1,24 +1,111 @@
 <p align="center">
-  <img src="headline.png" alt="dsh-sticky-notes preview" width="100%">
+  <img src="headline.png" alt="Sticky Notes for DSH — notes pinned in DeepSeek Harness" width="100%">
 </p>
 
 <h1 align="center">📝 Sticky Notes for DSH</h1>
 
 <p align="center">
-  <a href="README.md">中文</a> | <strong>English</strong>
+  <a href="README.md">中文</a> · <strong>English</strong>
 </p>
 
-<p align="center">Sticky notes plugin for DeepSeek Harness: draggable note cards pinned to the blank area.</p>
+<p align="center">
+  <strong>Real sticky notes for DeepSeek Harness</strong><br />
+  <sub>Draggable · Checkable todos · 9 skins · Image notes · AI read &amp; write</sub>
+</p>
 
-- **Type to record**: each note is a todo list; press Enter or click Add
-- **Check off**: tick the checkbox to strike through and dim the item; click again to undo
-- **Multiple notes**: hit the "＋ New Note" button in the top-right corner to add as many as you like, each fully independent
-- **Draggable**: notes, collapsed chips, and the "New Note" button can be dragged anywhere and the position is remembered
-- **9 skins**: Classic Yellow, Mint Green, Sakura Pink, Sky Blue, Twilight Violet, Sunset Orange, Graphite Dark, Neon Glow, Minimal Paper
-- **Image notes**: upload or drop an image into a note
-- **Custom titles**: rename with the ✏️ pencil icon; leave blank for no title
-- **AI integration**: the DeepSeek model can directly **read** your notes and **write** for you (see below)
-- **Reliable storage**: notes survive refresh and page reloads
+<p align="center">
+  <a href="https://github.com/charrywhite/dsh-sticky-notes/stargazers"><img src="https://img.shields.io/github/stars/charrywhite/dsh-sticky-notes?style=flat&color=d97706" alt="Stars" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/charrywhite/dsh-sticky-notes?style=flat&color=059669" alt="License" /></a>
+  <a href="https://github.com/charrywhite/dsh-sticky-notes/releases"><img src="https://img.shields.io/github/package-json/v/charrywhite/dsh-sticky-notes?style=flat&color=2563eb" alt="Version" /></a>
+  <a href="https://github.com/charrywhite/dsh-sticky-notes"><img src="https://img.shields.io/badge/DeepSeek%20Harness-plugin-7c3aed?style=flat" alt="DeepSeek Harness Plugin" /></a>
+</p>
+
+<br />
+
+## Highlights
+
+<table>
+<tr>
+<td width="50%">
+
+### 📝 Type to record
+
+Each note is a todo list — press Enter or click Add to jot something down.
+
+</td>
+<td width="50%">
+
+### ☑️ Check off
+
+Tick the checkbox to strike through and dim an item; click again to undo.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 📌 Multiple notes
+
+Hit the "＋ New Note" button in the top-right corner to add as many as you like — each one fully independent.
+
+</td>
+<td width="50%">
+
+### 🖐 Draggable
+
+Notes, collapsed chips, and the New Note button can be dragged anywhere; positions are remembered.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎨 9 skins
+
+Classic Yellow, Mint Green, Sakura Pink, Sky Blue, Twilight Violet, Sunset Orange, Graphite Dark, Neon Glow, Minimal Paper — set per note.
+
+</td>
+<td width="50%">
+
+### 🖼 Image notes
+
+Upload or drop an image into a note; click it to replace it.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ✏️ Custom titles
+
+Rename with the ✏️ pencil icon; clear it for a blank title.
+
+</td>
+<td width="50%">
+
+### 🤖 AI integration
+
+The DeepSeek model can directly **read** your notes and **write** for you (see [§3](#3-ai-model-read--write)).
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+### 🛡 Reliable storage
+
+Every change is saved instantly — notes survive refresh and page reloads.
+
+</td>
+</tr>
+</table>
+
+## Skins
+
+<p align="center">
+  <img src="skins.png" alt="9 skins preview" width="100%">
+</p>
+<p align="center"><sub>Classic Yellow · Mint Green · Sakura Pink · Sky Blue · Twilight Violet · Sunset Orange · Graphite Dark · Neon Glow · Minimal Paper</sub></p>
 
 ---
 
