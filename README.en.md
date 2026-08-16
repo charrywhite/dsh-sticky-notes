@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img src="interface3.PNG" alt="Sticky Notes for DSH — interface screenshot" width="100%">
+  <img src="interface4.PNG" alt="Sticky Notes for DSH — interface screenshot" width="100%">
 </p>
 
 <br />

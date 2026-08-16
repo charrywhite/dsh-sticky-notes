@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img src="interface3.PNG" alt="DeepSeek 便签 — 界面截图" width="100%">
+  <img src="interface4.PNG" alt="DeepSeek 便签 — 界面截图" width="100%">
 </p>
 
 <br />
