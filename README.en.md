@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="headline.png" alt="Sticky Notes for DSH — notes pinned in DeepSeek Harness" width="100%">
-</p>
-
 <h1 align="center">📝 Sticky Notes for DSH</h1>
 
 <p align="center">
@@ -18,6 +14,10 @@
   <a href="./LICENSE"><img src="https://img.shields.io/github/license/charrywhite/dsh-sticky-notes?style=flat&color=059669" alt="License" /></a>
   <a href="https://github.com/charrywhite/dsh-sticky-notes/releases"><img src="https://img.shields.io/github/package-json/v/charrywhite/dsh-sticky-notes?style=flat&color=2563eb" alt="Version" /></a>
   <a href="https://github.com/charrywhite/dsh-sticky-notes"><img src="https://img.shields.io/badge/DeepSeek%20Harness-plugin-7c3aed?style=flat" alt="DeepSeek Harness Plugin" /></a>
+</p>
+
+<p align="center">
+  <img src="headline.png" alt="Sticky Notes for DSH — notes pinned in DeepSeek Harness" width="100%">
 </p>
 
 <br />
