@@ -1,6 +1,10 @@
-# 📝 dsh-sticky-notes
+<p align="center">
+  <img src="headline.png" alt="dsh-sticky-notes 便签预览" width="100%">
+</p>
 
-DeepSeek Harness 便签插件:一张张可拖动的便签纸,贴在对话框右侧空白处。
+<h1 align="center">📝 dsh-sticky-notes</h1>
+
+<p align="center">DeepSeek Harness 便签插件:一张张可拖动的便签纸,贴在对话框右侧空白处。</p>
 
 - **打字记录**:每张便签是一个待办列表,回车/按钮添加
 - **勾选完成**:点复选框,文字出现删除线并变淡
