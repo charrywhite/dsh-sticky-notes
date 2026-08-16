@@ -1,16 +1,16 @@
 # 📝 dsh-sticky-notes
 
-DeepSeek Harness 便签插件(静态插件):一张张可拖动的便签纸,贴在对话框右侧空白处。
+DeepSeek Harness 便签插件:一张张可拖动的便签纸,贴在对话框右侧空白处。
 
 - **打字记录**:每张便签是一个待办列表,回车/按钮添加
 - **勾选完成**:点复选框,文字出现删除线并变淡
 - **多张便签**:右上角「＋ 新建便签」随意添加,每张完全独立
 - **可拖动**:便签、收起的小标签、「新建便签」按钮都能拖到任意位置并记住
 - **9 套皮肤**:经典黄、薄荷绿、樱花粉、天空蓝、暮光紫、暖橙日落、石墨暗夜、霓虹荧光、极简白纸
-- **图片便签**:上传/拖入图片,便签纸里展示图片(自动压缩存储)
+- **图片便签**:上传/拖入图片,便签纸里展示图片
 - **自定义标题**:✏️ 铅笔图标重命名,清空后标题可留白
 - **AI 协同**:DeepSeek 模型可以直接**读**你的便签、帮你**写**便签(见下文)
-- **数据可靠**:host 权威存储到 `~/.dsh/sticky-notes.json`,刷新/重开/换浏览器都不丢
+- **数据可靠**:刷新、重开页面都不丢
 
 ---
 
@@ -18,9 +18,7 @@ DeepSeek Harness 便签插件(静态插件):一张张可拖动的便签纸,贴�
 
 > 前提:本机可执行 `dsh`(DeepSeek Harness CLI)。若 `pnpm` 不在 PATH,先执行 `npm i -g pnpm`(或 `corepack enable pnpm`)。
 
-### 方式 A:一行命令安装(官方推荐)
-
-dsh CLI 内置 `dsh plugin` 命令,自动完成「加依赖 + 加 bundles 层 + 建链接」全部步骤:
+### 方式 A:一行命令安装(推荐)
 
 ```powershell
 # 从 GitHub 仓库安装
@@ -35,9 +33,9 @@ dsh plugin --profile web add link:C:/path/to/dsh-plugin-sticky-notes
 1. **重启 dsh web**(在启动它的终端 Ctrl+C,重新运行 `dsh web`)
 2. **硬刷新浏览器页面**(Ctrl+F5),右侧就会出现便签
 
-> 说明:`dsh plugin` 是 pnpm 的转发器,安装后会自动检测包的 `dsh.bundle` 声明并把包加入 `dsh.profile.bundles`;卸载(`dsh plugin --profile web remove dsh-sticky-notes`)时也会自动从 bundles 剔除。
+卸载:`dsh plugin --profile web remove dsh-sticky-notes`
 
-### 方式 B:手动安装(备选,不依赖 dsh plugin)
+### 方式 B:手动安装(备选)
 
 把插件目录放到任意位置(下文以 `C:\path\to\dsh-plugin-sticky-notes` 为例),修改 web profile 配置:
 
@@ -121,14 +119,13 @@ pnpm install
 ### 图片便签
 
 - 上传后图片显示在便签纸内,点击图片可更换
-- 图片会被压缩(最长边 1400px, JPEG 0.85)再存储,避免撑爆存储配额
 - 图片便签同样支持拖动、换皮肤、重命名、收起、删除
 
 ---
 
 ## 3. AI 模型读写便签
 
-插件 host 半注册了两个模型工具,DeepSeek 模型在对话中可以直接调用:
+插件注册了两个模型工具,DeepSeek 模型在对话中可以直接调用:
 
 ### 读取:`sticky_notes_read`
 
@@ -145,40 +142,16 @@ pnpm install
 
 **用法**:对模型说「帮我在便签上记一条:明天下午三点开会」「把这个需求加到工作便签里」。
 
-### 同步机制
-
-```
-浏览器 UI (client.js)                     Node host (index.js)
-  便签界面 ◄─轮询 rev 每 3 秒─►  /sticky-notes/api/state  ◄─► ~/.dsh/sticky-notes.json
-  每次操作立即 POST 全量 ───────────┘                            ▲
-                                                    tools.register(sticky_notes_*)
-                                                              │
-                                                        模型(DeepSeek)
-```
-
-- **权威数据在 host 文件** `~/.dsh/sticky-notes.json`,浏览器只是渲染层 + 本地缓存
-- 你在界面上的每次操作立即上传;模型写入后,页面 3 秒内自动刷新显示
-- 首次从旧版升级时,浏览器会自动把 localStorage 里的便签迁移上传
-
 ---
 
 ## 4. 卸载
 
-1. 从 `%USERPROFILE%\.dsh\profiles\web\package.json` 移除依赖项和 bundles 条目
-2. 删除 junction:`Remove-Item "$env:USERPROFILE\.dsh\profiles\web\node_modules\dsh-sticky-notes"`
+1. 方式 A 安装的:`dsh plugin --profile web remove dsh-sticky-notes`
+2. 方式 B/C 安装的:从 `package.json` 移除依赖项和 bundles 条目,再执行 `pnpm install`
 3. (可选)删除数据文件:`Remove-Item "$env:USERPROFILE\.dsh\sticky-notes.json"`
 4. 重启 dsh web
 
 ---
-
-## 文件结构
-
-| 文件 | 职责 |
-|------|------|
-| `lib/client.js` | 浏览器端便签 UI:多便签、拖动、皮肤、图片、标题、与 host 同步 |
-| `lib/index.js` | Node 端:权威存储(`~/.dsh/sticky-notes.json`)、HTTP API、模型工具 |
-| `cordis.patch.yml` | 组合补丁:把插件行插入 profile 组合 |
-| `package.json` | 包声明:`dsh.bundle.patch`(补丁)+ `dsh.client`(web 平台,立即加载) |
 
 ## 环境要求
 
