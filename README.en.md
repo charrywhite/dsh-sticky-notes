@@ -35,13 +35,20 @@ Each note is a todo list — press Enter or click Add to jot something down.
 </td>
 <td width="50%">
 
+### 🤖 AI integration
+
+The DeepSeek model can directly **read** your notes and **write** for you (see [§3](#3-ai-model-read--write)).
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
 ### ☑️ Check off
 
 Tick the checkbox to strike through and dim an item; click again to undo.
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 ### 📌 Multiple notes
@@ -49,6 +56,8 @@ Tick the checkbox to strike through and dim an item; click again to undo.
 Hit the "＋ New Note" button in the top-right corner to add as many as you like — each one fully independent.
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 ### 🖐 Draggable
@@ -56,8 +65,6 @@ Hit the "＋ New Note" button in the top-right corner to add as many as you like
 Notes, collapsed chips, and the New Note button can be dragged anywhere; positions are remembered.
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 ### 🎨 9 skins
@@ -65,6 +72,8 @@ Notes, collapsed chips, and the New Note button can be dragged anywhere; positio
 Classic Yellow, Mint Green, Sakura Pink, Sky Blue, Twilight Violet, Sunset Orange, Graphite Dark, Neon Glow, Minimal Paper — set per note.
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 ### 🖼 Image notes
@@ -72,20 +81,11 @@ Classic Yellow, Mint Green, Sakura Pink, Sky Blue, Twilight Violet, Sunset Orang
 Upload or drop an image into a note; click it to replace it.
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 ### ✏️ Custom titles
 
 Rename with the ✏️ pencil icon; clear it for a blank title.
-
-</td>
-<td width="50%">
-
-### 🤖 AI integration
-
-The DeepSeek model can directly **read** your notes and **write** for you (see [§3](#3-ai-model-read--write)).
 
 </td>
 </tr>
