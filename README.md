@@ -16,9 +16,30 @@ DeepSeek Harness 便签插件(静态插件):一张张可拖动的便签纸,贴�
 
 ## 1. 安装
 
-### 方式 A:本地目录安装(开发/自用,推荐先这样)
+> 前提:本机可执行 `dsh`(DeepSeek Harness CLI)。若 `pnpm` 不在 PATH,先执行 `npm i -g pnpm`(或 `corepack enable pnpm`)。
 
-把插件目录放到任意位置(下文以 `C:\path\to\dsh-plugin-sticky-notes` 为例),然后修改你的 web profile 配置。
+### 方式 A:一行命令安装(官方推荐)
+
+dsh CLI 内置 `dsh plugin` 命令,自动完成「加依赖 + 加 bundles 层 + 建链接」全部步骤:
+
+```powershell
+# 从 GitHub 仓库安装
+dsh plugin --profile web add github:charrywhite/dsh-sticky-notes
+
+# 或本地目录开发安装(link 指向插件目录,自动解析)
+dsh plugin --profile web add link:C:/path/to/dsh-plugin-sticky-notes
+```
+
+安装完成后:
+
+1. **重启 dsh web**(在启动它的终端 Ctrl+C,重新运行 `dsh web`)
+2. **硬刷新浏览器页面**(Ctrl+F5),右侧就会出现便签
+
+> 说明:`dsh plugin` 是 pnpm 的转发器,安装后会自动检测包的 `dsh.bundle` 声明并把包加入 `dsh.profile.bundles`;卸载(`dsh plugin --profile web remove dsh-sticky-notes`)时也会自动从 bundles 剔除。
+
+### 方式 B:手动安装(备选,不依赖 dsh plugin)
+
+把插件目录放到任意位置(下文以 `C:\path\to\dsh-plugin-sticky-notes` 为例),修改 web profile 配置:
 
 **① 注册依赖与 bundle**
 
@@ -43,31 +64,23 @@ DeepSeek Harness 便签插件(静态插件):一张张可拖动的便签纸,贴�
 
 > `link:` 指向插件目录的绝对路径,斜杠 `/` 或反斜杠 `\` 均可(JSON 里建议用 `/`)。
 
-**② 创建 node_modules 链接**
-
-在 `%USERPROFILE%\.dsh\profiles\web\node_modules\` 下创建 junction,指向插件目录:
+**② 在 profile 目录执行 pnpm install**
 
 ```powershell
-New-Item -ItemType Junction -Path "$env:USERPROFILE\.dsh\profiles\web\node_modules\dsh-sticky-notes" -Target "C:\path\to\dsh-plugin-sticky-notes"
+cd "$env:USERPROFILE\.dsh\profiles\web"
+pnpm install
 ```
 
-**③ 重启 dsh web**
+**③ 重启 dsh web + 硬刷新浏览器页面**(Ctrl+F5)。
 
-```powershell
-# 在启动 dsh web 的终端里 Ctrl+C 停止,然后重新启动
-dsh web
-```
+### 方式 C:GitHub 依赖手动方式
 
-**④ 硬刷新浏览器页面**(Ctrl+F5),右侧就会出现便签。
-
-### 方式 B:从 GitHub 仓库安装(分发)
-
-把本仓库克隆/下载后,在 `package.json` 里把依赖写成 GitHub 引用(与 `dsh-archived-sessions` 同款方式):
+在 `package.json` 里把依赖写成 GitHub 引用,然后同样执行 `pnpm install` + 重启 + 刷新:
 
 ```json
 {
   "dependencies": {
-    "dsh-sticky-notes": "github:你的用户名/dsh-sticky-notes#commit哈希或分支"
+    "dsh-sticky-notes": "github:charrywhite/dsh-sticky-notes#commit哈希或分支"
   },
   "dsh": {
     "profile": {
@@ -76,8 +89,6 @@ dsh web
   }
 }
 ```
-
-然后在 profile 目录执行 `pnpm install`(会解析 GitHub 依赖并建立链接),再重启 + 刷新。
 
 ---
 
