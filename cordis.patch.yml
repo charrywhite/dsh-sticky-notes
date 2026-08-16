@@ -1,0 +1,4 @@
+# dsh-sticky-notes bundle patch: one insert row activating the sticky-note plugin.
+- insert:
+    - id: dsh-sticky-notes
+      name: 'dsh-sticky-notes'
