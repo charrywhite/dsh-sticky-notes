@@ -213,6 +213,7 @@ New notes stack from the top-right corner by default; each has a title bar, a co
 | Change skin | click 🎨 in the title bar, pick from 9 color swatches (per note) |
 | Rename | click ✏️ in the title bar, type a new name, Enter/blur to save; clear it for no title |
 | Collapse/expand | click `—` in the title bar to collapse into a chip; click the chip to expand |
+| Auto-rescue | when the viewport shrinks (e.g. large screen → phone), notes that end up off-screen are collapsed and pulled back to the nearest screen edge; the "New Note" button likewise returns to its default position |
 | Delete the note | click 🗑 in the title bar (with a confirmation dialog) |
 
 ### Image notes
