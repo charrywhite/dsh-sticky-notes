@@ -193,7 +193,7 @@ Write the dependency as a GitHub reference in `package.json`, then run `pnpm ins
 
 ### Creating notes
 
-**Long-press** the **"便签" (Notes) button** in the bottom-right corner and pick:
+**Long-press** the **"便签" (Notes) button** in the top-right corner and pick:
 
 | Option | Description |
 |--------|-------------|
