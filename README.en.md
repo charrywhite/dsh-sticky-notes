@@ -193,7 +193,7 @@ Write the dependency as a GitHub reference in `package.json`, then run `pnpm ins
 
 ### Creating notes
 
-Click the "**＋ New Note**" button in the top-right corner and pick:
+**Long-press** the 🏠 **home key** in the bottom-right corner and pick:
 
 | Option | Description |
 |--------|-------------|
@@ -206,7 +206,8 @@ New notes stack from the top-right corner by default; each has a title bar, a co
 
 | Action | How |
 |--------|-----|
-| Drag | hold the **title bar** (or the collapsed chip / New Note button) and drag; the position is remembered |
+| Drag | hold the **title bar** (or the collapsed chip / home key) and drag; the position is remembered |
+| Hide/show all | tap the 🏠 home key: all notes hide at once; tap again to restore (state is remembered) |
 | Check off | click the checkbox left of an item → strikethrough + dim; click again to undo |
 | Delete an item | hover the item, click the `×` on the right |
 | Clear done | "Clear done" button at the bottom of the note clears all checked items at once |
