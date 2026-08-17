@@ -259,6 +259,10 @@ pnpm install
 - 浏览器:现代 Chromium/Firefox/Safari
 - 无第三方运行时依赖
 
+## 鸣谢
+
+感谢 [@scraed](https://github.com/scraed) 在 [PR #1](https://github.com/charrywhite/dsh-sticky-notes/pull/1) 中提出的交互设计:home 键(单击隐藏/显示全部便签、长按新建)与「点击标题栏收起便签」。
+
 ## License
 
 MIT

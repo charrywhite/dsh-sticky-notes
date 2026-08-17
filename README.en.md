@@ -259,6 +259,10 @@ Lists all notes: title, each item's text, completion status (☐/☑), skin, and
 - Browser: modern Chromium / Firefox / Safari
 - No third-party runtime dependencies
 
+## Credits
+
+Thanks to [@scraed](https://github.com/scraed) for the interaction designs proposed in [PR #1](https://github.com/charrywhite/dsh-sticky-notes/pull/1): the home key (tap to hide/show all notes, long-press to create) and tap-the-title-to-collapse.
+
 ## License
 
 MIT
