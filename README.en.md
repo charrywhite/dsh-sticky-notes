@@ -191,6 +191,11 @@ Write the dependency as a GitHub reference in `package.json`, then run `pnpm ins
 
 ## 2. Usage
 
+### Two function buttons
+
+- **📝 Notes button**: click it to open the menu and create a text or image note; drag it to move it around
+- **👀 Eye button**: click it to hide all notes at once (the icon turns into 🙈); click again to bring them all back
+
 ### Creating notes
 
 Click the 📝 **notes button** in the top-right corner and pick:
