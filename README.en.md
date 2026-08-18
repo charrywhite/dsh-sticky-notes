@@ -207,7 +207,7 @@ New notes stack from the top-right corner by default; each has a title bar, a co
 | Action | How |
 |--------|-----|
 | Drag | hold the **title bar** (or the collapsed chip / 📝 button) and drag; the position is remembered |
-| Hide/show all | tap the 👁 button below the 📝 button: all notes hide at once (icon becomes 🙈); tap again to restore (state is remembered) |
+| Hide/show all | tap the 👀 bubble overlapping the 📝 button's top-right corner: all notes hide at once (icon becomes 🙈); tap again to restore (state is remembered) |
 | Check off | click the checkbox left of an item → strikethrough + dim; click again to undo |
 | Delete an item | hover the item, click the `×` on the right |
 | Clear done | "Clear done" button at the bottom of the note clears all checked items at once |
